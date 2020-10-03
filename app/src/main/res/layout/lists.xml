@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/nam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nam"
+        android:text="ygyggh"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="30dp"
+        android:id="@+id/pos"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="hhh"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:id="@+id/poi"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hhh"
+        android:paddingLeft="30dp"
+        android:layout_below="@id/pos"
+        android:id="@+id/cat"/>
+  <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hhh"
+        android:paddingLeft="30dp"
+        android:layout_below="@id/cat"
+        android:id="@+id/location"/>!-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check"
+        android:layout_toLeftOf="@id/nam"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:layout_below="@id/poi"
+        android:src="@drawable/update"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/delete"
+        android:id="@+id/delete"
+        />
+
+
+
+</RelativeLayout>

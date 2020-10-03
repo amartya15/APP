@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/catagory"
+    tools:context=".catagory">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+        android:id="@+id/imhorror"
+        android:layout_width="163dp"
+        android:layout_height="121dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="103dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/download" />
+
+    <ImageView
+        android:id="@+id/imhumour"
+        android:layout_width="163dp"
+        android:layout_height="121dp"
+        android:layout_marginLeft="242dp"
+        android:layout_marginTop="99dp"
+
+
+        android:scaleType="fitXY"
+        android:src="@drawable/roman" />
+
+    <ImageView
+        android:id="@+id/imclassic"
+        android:layout_width="163dp"
+        android:layout_height="121dp"
+        android:layout_below="@id/imhorror"
+
+
+        android:layout_marginTop="54dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/laughing2" />
+
+    <ImageView
+        android:id="@+id/imromantic"
+        android:layout_width="163dp"
+        android:layout_height="121dp"
+
+
+        android:layout_below="@id/imhumour"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="75dp"
+
+        android:layout_toRightOf="@id/imclassic"
+        android:scaleType="fitXY"
+        android:src="@drawable/horror" />
+
+    <ImageView
+        android:id="@+id/immithology"
+        android:layout_width="163dp"
+        android:layout_height="121dp"
+        android:layout_below="@id/imclassic"
+        android:layout_marginTop="65dp"
+
+
+        android:scaleType="fitXY"
+        android:src="@drawable/images" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imhumour"
+        android:layout_marginTop="-1dp"
+
+
+        android:onClick="add"
+        android:paddingTop="0dp"
+        android:text="CLASSIC" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imhumour"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/button1"
+        android:paddingTop="0dp"
+        android:text="ROMANTIC"
+        android:onClick="romantic"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imclassic"
+        android:layout_marginTop="6dp"
+        android:paddingTop="0dp"
+        android:text="HUMOUR"
+        android:onClick="humour"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imhumour"
+        android:layout_marginLeft="171dp"
+        android:layout_marginTop="205dp"
+        android:layout_toRightOf="@id/button2"
+        android:paddingTop="0dp"
+        android:text="HORROR" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/immithology"
+        android:layout_marginTop="8dp"
+        android:paddingTop="0dp"
+        android:text="MITHOLOGY" />
+
+    <TextView
+        android:id="@+id/cata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="CATAGORIES"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        />
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

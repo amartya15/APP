@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/nam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:paddingLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nam"
+        android:text="ygyggh"
+        android:paddingLeft="30dp"
+        android:id="@+id/pos"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hhh"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:id="@+id/poi"/>
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/poi"
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/checkboxoutline"
+
+        />
+
+    <ImageView
+        android:id="@+id/request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/checked" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="add"
+        android:text="add"
+        android:layout_below="@+id/pos"/>
+
+
+</RelativeLayout>
